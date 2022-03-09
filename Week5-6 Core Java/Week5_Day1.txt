@@ -1,0 +1,54 @@
+===============================================================================
+Programming Language:
+a. environment : software or hardware requirement
+b. IDE : editors to write the code in best way
+===============================================================================
+1. Keywords
+2. Datatype
+3. Variable, Constant, scope variable
+4. Operations
+5. Control/ decision making statement
+6. Looping/iterations
+7. Reusable-> Functions
+8. OOP (class, object, Abstraction,Encapsulation,Inheritance and Polymorphism)
+===============================================================================
+Problem Solving: Algorithm Flowchart 
+Algorithm
+	a. sorting algorithm
+	b. searching algorithm
+Set of instruction with number of steps clearly indicating all process followed 
+in the algorithm
+#### print hello world 
+Step 1: Start
+Step 2: print message hello world
+Step 3: Stop
+#### print message given by user at runtime
+Step 1: Start
+Step 2: declare message as variable to accept input
+Step 3: accept input from user  and store it into message
+Step 4: print message 
+Step 5: Stop 
+#### Accept message from user and print it 10 times on the screen
+Step 1: Start
+Step 2: declare message as variable to accept input
+Step 3: accept input from user  and store it into message
+Step 4: declare counter with initial value 1
+Step 5: 		print the message
+Step 6: 		increment counter value by 1
+Step 7: repeate step 5 and 6 until the counter<11
+Step 8: Stop
+#### Accept 10 numbers from the user 
+
+
+
+
+
+URL : http://www.mastek.com 
+package= com.mastek.<project>
+
+
+
+
+	
+	
+	

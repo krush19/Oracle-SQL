@@ -1,0 +1,144 @@
+=======================================================================================
+OOP 
+class & objects
+1. Abstraction
+2. Encapsulation
+3. Inheritance
+4. Polymorphism
+========================================================================================
+############# 1. Abstraction
+========================================================================================
+>> Create an application for a Restaurant:
+Process involved in Restaurant:
+	1. Read menu 
+	2. Place order 
+	3. Food prepared 
+	4. Food Served
+	5. Bill generated
+	6. Bill Payment
+1. Who all are actors in above process?
+	customer,chef,waiter,manager,menu,order,dishes,bill
+2. what all data/information/attributes/fields the above actors must have
+	dishes(id,name,ingredients,price)
+	menu(list dishes,category)
+	order(orderid,dish,quantity,unitprice,total)
+	manager(empno,name,role)
+	chef(empno,name,role)
+	waiter(empno,name,role)
+	customer(customerid,custname,bookingdate,no.ofpeople,table)
+========================================================================================		
+>> Create an application for a Family physician:
+process:
+1. describe the problem to the physician
+2. physician gives prescription
+3. take prescribed medicine
+4. pay the feesactors:
+	
+1. Who all are actors in above process?
+		Appointment, Doctor, Patient, Presciption, Reports, Bill
+		patient, physician, medicine, receiptfields:
+2. what all data/information/attributes/fields the above actors must have
+Appintment(id, time/date, name)
+Doctor(id, name, degree, specialization)
+patient(patient_id, patient_name, disease, prescribed medicines, contact_number)
+receipt(receipt_no, total)
+========================================================================================	
+#############Encapsulation: the data in a class is hidden from other classes, so it is also known as data-hiding.e 
+It is defined as the wrapping up of data under a single unit. =>class
+========================================================================================
+>> Create an application for a BankingApplication
+========================================================================================
+Process :
+	1. Open an account in a bank
+	2. check balance
+	3. withdraw amount
+	4. deposit amount
+	5. closing account
+========================================================================================
+ACTORS: ACCOUNT 
+FIELDS: ACCOUNT(ACCNO,ACCNAME,IFSC,TYPEOFACCOUNT,BALANCE,ADDRESS,PHONNO)
+*** ACCOUNT(ACCNO,ACCNAME,BALANCE)
+PROJECT: bankapp
+pacakage:com.mastek.bankapp
+class: com.mastek.bankapp.BankApp
+	   com.mastek.bankapp.BankAccount	   
+========================================================================================
+Java 
+Plain old java object -> POJO All classes in Java are POJO
+	public class BankAccount{}
+	public class BankAccount{
+		public BankAccount(){}
+	}
+	public class BankAccount{
+		private BankAccount(){}
+	}
+
+	 class BankAccount{}
+	 class BankAccount{
+		public BankAccount(){}
+	}
+	 class BankAccount{
+		private BankAccount(){}
+	}
+Java Beans 
+1. class has public default constructor
+2. all datamembers/instance variables are private
+3. all private instance varialbe have public getter/setter methods 
+
+*** All Javabeans are POJO's but All POJO's are not javabeans
+
+**** For each Jdk1.5 -> used to display each element of arrays or list or set or queue
+		for(BankAccount a : accounts){
+			if(a==null){
+				a=account;
+				break;
+			}
+		}
+****		for (int i = 0; i < accounts.length; i++) {
+			if(accounts[i]==null){
+				System.out.println(accNo+" Not found");
+				break;
+			}
+			else if (accNo == accounts[i].getAccNo()) {
+				System.out.println(accounts[i].withdraw(amount));
+				break;
+			}
+		}
+**** for (int i = 0; i < accounts.length; i++) {
+			if (accNo == accounts[i].getAccNo()) {
+				System.out.println(accounts[i].deposit(amount));
+				break;
+			}
+		}		
+
+
+
+1. Abstraction
+2. Encapsulate
+	1. POJO
+	2. JavaBeans 
+3. Array 
+	Object Array 
+	1. Declaration & initialization
+		BankAccount[] accounts = new BankAccount[10];
+	2. How to assign values to specific element using indices	
+				accounts[0] = new BankAccount("Ajit", 10000.00);
+	3. Iterating over an array 
+		Using For each loop
+		for (BankAccount account : accounts) {
+			if(account!=null)
+				System.out.println(account.getAccNo() + " " + account.getAccName() + " " + account.getBalance());
+		}
+		Using array indices
+     	for (int i = 0; i < accounts.length; i++) {
+				if(accounts[i]!=null)
+				System.out.println(accounts[i].getAccNo() + " " + accounts[i].getAccName() + " " + accounts[i].getBalance());
+		}		
+	4. initialzing array using loop is only possible with for loop using array indices
+	*** never use for each loop to initialize the array 
+	
+
+
+
+
+

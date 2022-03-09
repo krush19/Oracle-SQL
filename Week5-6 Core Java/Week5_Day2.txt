@@ -1,0 +1,113 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+demo02: Greeting->greet()=>message "Hello World"
+@@@@@@@@@@@UML Class -> 
+################################
+	Greeting
+################################
+	-id:int
+	-message:String
+################################
+	+greet():String
+################################
+1. first part indicates class name
+2. 2nd part indicates fields/data members
+3. 3rd part indicates behaviour /methods
+4. - indicating private : only accessible within the class 
+5. + indicating public  : can be access within calls,outside class,outside package
+################################
+1. class has datamembers -> private and also called field variables
+	1.1 every object/instance of class have their own copy of set of field variables
+2. class has construtor
+	2.1 constuctor is special method
+	2.2 constructor has name same as that of the class
+	2.3 it don't have return type
+	2.4. constructor is always called with new keyword and returns the object of class
+	2.5 it initializes data memeber with default values(explicity/implicit)
+	
+
+this.id=counter++; // post increment
+step1 : this.id=counter;
+step2 : counter=counter+1
+
+this refers to the current object
+super -> parent class
+public Greeting() {
+		super(); 
+// calling the default constructor of Object (Parent) of all classess in java		
+}
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+demo03: Greeting app to accept the custom message for specific greeting
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#### Overloading constructor
+1. Name is as that of the class
+2. Overloading of constructor
+	2.1. No. of arguments
+	2.2. type of arguments
+	2.3. order of argumetns 
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	public Greeting() {	
+		System.out.println("Default constructor called");
+		this.id=counter++;
+	}
+	public Greeting(int id, String message) {	
+		this.id = id;
+		this.message = message;
+	}
+	public Greeting(String message) {
+		this();// calling default constructor of a class		
+		this.message = message;
+	}
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@		
+3. calling one constructor from another constructor 
+	public Greeting(String message) {
+		this();// calling default constructor of a class		
+		this.message = message;
+	}
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+demo04: Greeting has default message but we want to edit the old 
+message give new message
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+private data members not accessible (not visible) outside the class
+hence must provide getter/setter (accessor/mutators) public methods 
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+demo06: Greeting app user can select any greeting from below:
+1. Morning Wishes
+2. Happy New year
+3. Happy Birthday
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+step1: start
+step2: declare greeting("")
+step3:  print menu as follows:
+			select greeting
+			1. Morning Wishes
+			2. Happy New year
+			3. Happy Birthday
+step4: accept choice
+step5: 
+ if (choice==1) greeting.setMessage("Good Morning!");
+  else if (choice==2) greeting.setMessage("Happy New year")
+   else if (choice==3) greeting.setMessage("Happy Birthday")
+		else 
+			greeting.setMessage("Have great day")
+
+step6: greeting.greet()
+step7: stop 
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+demo07: Greeting app user can select any greeting from below:
+1. Morning Wishes
+2. Happy New year
+3. Happy Birthday
+	a. User can select 3 cards ->for
+	b. ask user do you want to choose card if said no entered "n" stop 
+		i. condition check while entering -while
+		ii. condition check while exit    =ateast =>do-while
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+
+
+
+
+

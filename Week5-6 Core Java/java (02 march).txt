@@ -1,0 +1,87 @@
+#### print hello world
+Step 1: Start
+Step 2: print message hello world
+Step 3: Stop
+#### print message given by user at runtime
+Step 1: Start
+Step 2: declare message as variable to accept input
+Step 3: accept input from user and store it into message
+Step 4: print message
+Step 5: Stop
+#### Accept message from user and print it 10 times on the screen
+Step 1: Start
+Step 2: declare message as variable to accept input
+Step 3: accept input from user and store it into message
+Step 4: declare counter with initial value 1
+Step 5: print the message
+Step 6: increment counter value by 1
+Step 7: repeate step 5 and 6 until the counter<11
+Step 8: Stop
+#### Accept 10 numbers from the user (with single variable)
+Step 1 : Start
+Step 2 : Declare n  
+Step 3 : Declare counter with initial value 1 
+Step 4 : Accept n 
+Step 5 : increment counter value by 1 
+Step 6 : Repeat step 4 and 5 until counter <11
+step 7 : stop
+#### Accept 10 numbers from the user (with collections/array )
+Step 1 : Start
+Step 2 : Declare array arr[] with size 10   
+Step 3 : Declare counter with initial value 0
+Step 4 : accept arr[counter]
+Step 5 : increment counter value by 1 
+Step 6 : Repeat step 4 and 5 until counter <10
+step 7 : stop
+#### write an algorithm to accept contact details such as name and phone no 
+step 1 : start 
+step 2 : declare name , phoneno of type string  
+step 3 : print enter name 
+step 4 : accept name 
+step 5 : print enter phoneno 
+step 6 : accept phoneno
+step 7 : stop
+
+#### write an algorithm to accept contact details such as name and phone no for number of friends user enter and 
+#### print it as follow :
+ Amit 9876543210 
+ Ajit 8976543210 
+contact= {name:"Amit" , phoneno:"9876543210"}
+
+step 1 : start
+step 2 : declare no_of_frds type number , array contact[no_of_frds] as {name:"" , phoneno:""} 
+step 3 : print enter no of friends
+step 4 : accept no_of_frds
+step 5 : declare counter set initial value 0
+step 6 : print enter name 
+step 7 : accept contact[counter].name 
+step 8 : print enter phoneno 
+step 9 : accept contact[counter].phoneno 
+step 10 :increment counter value by 1 
+step 11: repeat step 6 to step 10 until counter< no_of_frds
+step 12 :   set counter initial value 0
+step 13 : print contact[counter].name  contact[counter].phoneno
+step 14 :increment counter value by 1 
+step 15:  repeat step 13 and step 14 until counter< no_of_frds 
+step 16 : stop
+
+### Step for writing better program 
+Step 1 :  Read the problem statement twice 
+step 2 : Identify the inputs and outputs expected to the solution 
+step 3 : Identify the variables and datatypes 
+step 4 : If the variable is collection type , we need to think about below operation 
+         4.1. Do we need static [array] or dynamic[list,set,queue,map] collection
+		 4.2. Sorting of collection is required 
+		 4.3. Searching on a collection(only on sorted collection)
+step 5 :  If the variable is single , Compelete the  operation(declare , initial, use, passing as a variable ) and end the task.
+step 6 : Can we create  a reusable code:
+         6.1. If your code has repeatative  logic , put inside the function .
+		 6.2. Function must have single responsibilty 
+step 7 : Representing the data in a single unit formate or defining the object or the classes to have user define
+step 8 : Do we have any domain specific exception or error to be handle 
+         8.1. Identify the domain specific exception
+		 8.2. Create the domain specific custom exception
+		 8.3. Handle the custom exception 
+		 8.4. Handle the default exception
+
+

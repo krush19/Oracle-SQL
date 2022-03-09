@@ -1,0 +1,36 @@
+JavaAssignment01: 
+Part 1: Complete the Reading 
+FROM :https://www.javatpoint.com/java-oops-concepts
+	Java OOPs Concepts
+	Naming Convention
+	Object and Class
+	Method
+	Constructor
+	static keyword
+	this keyword
+Part 2: Create grocery shop application
+a. Define: Process,Find Actors and Attributes
+b. Write program 
+	a. display the product available on groceryshop
+JavaAssignment02: 	
+Part I: Complete reading 
+From: https://www.geeksforgeeks.org/object-oriented-programming-oops-concept-in-java/
+Below Topic:
+Table of Contents
+Basics of Java
+Variables & DataTypes in Java
+Operators in Java
+Packages in Java
+Flow Control in Java
+Loops in Java
+Jump Statements in Java
+Arrays in Java
+Strings in Java
+OOPS in Java
+Object Oriented Programming (OOPs) Concept in Java
+Classes and Objects in Java
+Methods in Java
+Access Modifiers in Java
+Wrapper Classes in Java
+Need of Wrapper Classes in Java
+Constructors in Java
